@@ -10,11 +10,9 @@ const github = {
     token: process.env.NEXT_PUBLIC_GITHUB_TOKEN || '',
 }
 
-const api = process.env.NEXT_PUBLIC_API_URL || ''
 
 const configs = {
     flags,
-    api,
     cohort,
     github,
 }
