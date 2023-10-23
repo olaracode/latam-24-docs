@@ -20,27 +20,21 @@ const MarkDown = ({ content }: { content: string }) => {
     >
       <ReactMarkdown
         components={{
-          code({ node, inline, className, children, style, ...props }) {
+          code({ node, className, children, style, ...props }) {
             const match = /language-(\w+)/.exec(className || "");
-            return !inline && match ? (
+            const { ref, ...otherProps } = props;
+            return match ? (
               <SyntaxHighlighter
                 style={atomDark}
                 language={match[1]}
                 PreTag="div"
                 children={String(children).replace(/\n$/, "")}
-                {...props}
+                {...otherProps}
               />
             ) : (
               <code className={className} {...props}>
                 {children}
               </code>
-            );
-          },
-          a({ node, children, href, ...props }) {
-            return (
-              <Link href={href} {...props}>
-                {children}
-              </Link>
             );
           },
         }}

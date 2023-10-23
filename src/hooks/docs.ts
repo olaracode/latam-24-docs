@@ -1,4 +1,4 @@
-type DocsT = {
+export type DocsT = {
   name: string;
   file: string;
   topic: string;
@@ -31,7 +31,7 @@ const cssDocs: DocsT[] = [
     topic: "css",
     content: "",
     tags: ["css"],
-  }
+  },
 ]
 
 const vsCodeDocs: DocsT[] = [

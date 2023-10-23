@@ -16,7 +16,7 @@ const TopicList = () => {
       <div className="flex flex-wrap gap-3 mt-1">
         {topics.map((topic) => (
           <div
-            key={topic}
+            key={`tema-${topic}`}
             className="border-2 border-black shadow-md py-1 px-3"
           >
             <h2 className="text-sm font-bold">{topic}</h2>

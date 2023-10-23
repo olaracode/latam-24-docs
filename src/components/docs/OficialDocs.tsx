@@ -40,10 +40,13 @@ const officialDocs = [
 const OficialDocs = () => {
   return (
     <div>
-      <ul className="bg-[#FF6767] shadow-brutal text-white grid gap-2 border border-black p-3">
+      <ul className="bg-[#FF6767] shadow-brutal text-white grid gap-2 border-2 border-black p-3">
         <h2 className="text-xl font-bold ">Documentación Oficial</h2>
         {officialDocs.map((doc) => (
-          <li key={doc.name} className="p-5 border-2 border-white">
+          <li
+            key={`official-docs-${doc.name}`}
+            className="p-5 border-2 border-white"
+          >
             <Link
               href={doc.url}
               className="hover:underline hover:font-bold"
