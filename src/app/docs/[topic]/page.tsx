@@ -40,12 +40,7 @@ const DocTopic = ({
         </div>
         {current.map((doc, i) => {
           return (
-            <div
-              key={doc.file}
-              className={`${
-                i % 2 !== 0 ? "bg-gray-100" : ""
-              } border-b-2 border-black`}
-            >
+            <div key={doc.file} className={` border-b-2 border-black`}>
               <h2>{doc.name}</h2>
               <Link
                 href={`${topic}/${doc.file.replace(".md", "")}`}

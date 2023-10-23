@@ -12,7 +12,7 @@ const OwnedDocs = () => {
         </Link>
       </div>
       <div className="grid gap-2 mt-3">
-        {docs.map((doc) => {
+        {docs.splice(0, 4).map((doc) => {
           return (
             <div className="border-b-2 border-black pb-2" key={doc.file}>
               <h3 className="text-lg">{doc.name}</h3>

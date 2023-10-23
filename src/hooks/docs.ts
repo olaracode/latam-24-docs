@@ -34,6 +34,68 @@ const cssDocs: DocsT[] = [
   },
 ]
 
+const jsDocs: DocsT[] = [
+  {
+    name: "Metodos de array(js)",
+    file: "array-methods-js.md",
+    topic: "js",
+    content: "",
+    tags: ["js"],
+  },
+  {
+    name: "Eventos javascript",
+    file: "events-js.md",
+    topic: "js",
+    content: "",
+    tags: ["js"],
+  },
+  {
+    name: "Fetch Javascript",
+    file: "fetch-js.md",
+    topic: "js",
+    content: "",
+    tags: ["js"]
+  }
+]
+
+const reactDocs: DocsT[] = [
+  {
+    name: "Metodos de array(React.js)",
+    file: "array-methods-react.md",
+    topic: "react",
+    content: "",
+    tags: ["react", "js"],
+  },
+  {
+    name: "React Estados/useState",
+    file: "react-state.md",
+    topic: "react",
+    content: "",
+    tags: ["react", "js"],
+  },
+  {
+    name: "React useEffect",
+    file: "react-effect.md",
+    topic: "react",
+    content: "",
+    tags: ["react", "js"],
+  },
+  {
+    name: "React Router Dom",
+    file: "react-router-dom.md",
+    topic: "react",
+    content: "",
+    tags: ["react", "js"],
+  },
+  {
+    name: "Notación JSX",
+    file: "jsx-notation.md",
+    topic: "react",
+    content: "",
+    tags: ["react", "js", "html"],
+  }
+]
+
 const vsCodeDocs: DocsT[] = [
   {
     name: "Comandos Visual Studio",
@@ -47,7 +109,9 @@ const vsCodeDocs: DocsT[] = [
 const docs: DocsT[] = [
     ...htmlDocs,
     ...cssDocs,
-    ...vsCodeDocs
+    ...vsCodeDocs,
+    ...jsDocs,
+    ...reactDocs,
 ]
 
 export default docs;

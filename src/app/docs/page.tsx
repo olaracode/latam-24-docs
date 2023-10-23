@@ -23,6 +23,7 @@ const Docs = () => {
               <li
                 className="border-2 border-black p-3 shadow-brutal"
                 key={`${topic}-tema`}
+                id={topic}
               >
                 <div className="flex items-center justify-between">
                   <h2 className="uppercase text-xl font-bold">{topic}</h2>

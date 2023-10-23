@@ -40,6 +40,7 @@ export default function RootLayout({
           </Container>
         </nav>
         {children}
+        {/* <footer className=""></footer> */}
       </body>
     </html>
   );

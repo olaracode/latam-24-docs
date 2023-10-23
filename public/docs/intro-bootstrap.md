@@ -25,88 +25,96 @@
 ></script>
 ```
 
-## Contenedores
+## Diseño Responsive usando Bootstrap
 
-- `.container`: Contenedor con ancho fijo.
-- `.container-fluid`: Contenedor con ancho completo.
+El diseño responsive es una técnica de diseño web que busca la correcta visualización de una misma página en distintos dispositivos. Desde ordenadores de escritorio a tablets y móviles.
 
-## Grid
+Cuando usamos bootstrap tenemos que usar la grilla de bootstrap para que nuestro sitio sea responsive.
 
-- `.row`: Fila que contiene columnas.
-- `.col`: Columna.
-- `.col-`: Columna con ancho automático.
-- `.col-{breakpoint}-`: Columna con ancho automático en un breakpoint.
-- `.col-{breakpoint}-auto`: Columna con ancho automático en un breakpoint.
-- `.col-{breakpoint}-{number}`: Columna con ancho fijo en un breakpoint.
-- `.col-{breakpoint}-auto`: Columna con ancho fijo en un breakpoint.
+### Grilla de Bootstrap
 
-## Breakpoints
+La grilla de bootstrap esta compuesta por 12 columnas, y cada fila puede tener un máximo de 12 columnas.
 
-- `.col-`: Extra pequeño.
-- `.col-sm-`: Pequeño.
-- `.col-md-`: Mediano.
-- `.col-lg-`: Grande.
-- `.col-xl-`: Extra grande.
+Para usar la grilla de bootstrap tenemos que usar las clases `row` y `col-XX` donde `XX` es el numero de columnas que queremos que ocupe el elemento.
 
-## Tipografía
+```html
+<div class="row">
+  <div class="col-12">Columna 1</div>
+  <div class="col-12">Columna 2</div>
+  <div class="col-12">Columna 3</div>
+</div>
+```
 
-- `.fs-1`: Título 2XL.
-- `.fs-2`: Título XL.
-- `.fs-3`: Título LG.
-- `.fs-4`: Título MD.
-- `.fs-5`: Título SM.
-- `.fs-6`: Título XS.
+### Breakpoints
 
-## Texto
+Los breakpoints son los puntos de quiebre donde se cambia el diseño de la pagina para adaptarse a distintos tamaños de pantalla.
 
-- `.text-`: Texto con alineación automática.
-- `.text-start`: Texto alineado a la izquierda.
-- `.text-center`: Texto centrado.
-- `.text-end`: Texto alineado a la derecha.
-- `.text-justify`: Texto justificado.
-- `.text-wrap`: Texto con salto de línea.
-- `.text-nowrap`: Texto sin salto de línea.
+Bootstrap tiene 5 breakpoints:
 
-## Colores(Texto)
+- `xs`: Extra small
+- `sm`: Small
+- `md`: Medium
+- `lg`: Large
+- `xl`: Extra large
 
-- `.text-primary`: Texto primario.
-- `.text-secondary`: Texto secundario.
-- `.text-success`: Texto de éxito.
-- `.text-danger`: Texto de peligro.
-- `.text-warning`: Texto de advertencia.
-- `.text-info`: Texto de información.
-- `.text-light`: Texto claro.
-- `.text-dark`: Texto oscuro.
+Para usar los breakpoints tenemos que usar las clases `col-XX-YY` donde `XX` es el breakpoint y `YY` es el numero de columnas que queremos que ocupe el elemento. El breakpoint por defecto es xs lo que quiere decir que `col-xs-12` es lo mismo que `col-12`.
 
-## Colores(Fondo)
+```html
+<div class="row">
+  <div class="col-12 col-md-6 col-lg-4 col-xl-3">Columna 1</div>
+</div>
+```
 
-- `.bg-primary`: Fondo primario.
-- `.bg-secondary`: Fondo secundario.
-- `.bg-success`: Fondo de éxito.
-- `.bg-danger`: Fondo de peligro.
-- `.bg-warning`: Fondo de advertencia.
-- `.bg-info`: Fondo de información.
-- `.bg-light`: Fondo claro.
-- `.bg-dark`: Fondo oscuro.
+En este ejemplo la columna 1 va a ocupar 12 columnas en pantallas extra pequeñas, 6 columnas en pantallas medianas, 4 columnas en pantallas grandes y 3 columnas en pantallas extra grandes.
 
-## Botones
+## Componentes de Bootstrap
 
-- `.btn`: Botón Base.
-- `.btn-primary`: Botón primario.
-- `.btn-secondary`: Botón secundario.
-- `.btn-success`: Botón de éxito.
-- `.btn-danger`: Botón de peligro.
-- `.btn-warning`: Botón de advertencia.
-- `.btn-info`: Botón de información.
-- `.btn-light`: Botón claro.
-- `.btn-dark`: Botón oscuro.
-- `.btn-link`: Botón como enlace.
-- `.btn-outline-primary`: Botón primario con borde.
-- `.btn-outline-secondary`: Botón secundario con borde.
-- `.btn-outline-success`: Botón de éxito con borde.
-- `.btn-outline-danger`: Botón de peligro con borde.
-- `.btn-outline-warning`: Botón de advertencia con borde.
-- `.btn-outline-info`: Botón de información con borde.
-- `.btn-outline-light`: Botón claro con borde.
-- `.btn-outline-dark`: Botón oscuro con borde.
-- `.btn-sm`: Botón pequeño.
+Bootstrap tiene muchos componentes que podemos usar para crear sitios web. En esta sección vamos a ver algunos de los mas usados.
+
+- Navbar
+- Cards
+- Forms
+- Buttons
+- Alerts
+- Modals
+- Dropdowns
+
+## Personalizar Bootstrap
+
+Cuando usamos bootstrap tambien podemos utilizar css para personalizar el diseño de nuestro sitio.
+
+Para personalizar bootstrap tenemos que crear un archivo css y agregarlo a nuestro sitio.
+
+```html
+<link rel="stylesheet" href="css/style.css" />
+```
+
+En este archivo podemos sobreescribir los estilos de bootstrap.
+
+> **Importante:** sobreescribir las clases de bootstrap puede traer problemas.
+
+```css
+/* Cambiar el color de fondo del navbar */
+.navbar {
+  background-color: #000;
+}
+```
+
+**O preferiblemente** creamos clases personalizadas y las agregamos a los elementos que queremos personalizar.
+
+```css
+/* Agregar un borde a los botones */
+.btn-custom {
+  border: 1px solid #000;
+}
+```
+
+```html
+<button class="btn btn-custom">Boton custom</button>
+```
+
+En este ejemplo utilizamos tanto la clase btn de bootstrap como nuestra clase personalizada.
+
+```
+
+```
