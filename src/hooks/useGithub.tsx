@@ -34,15 +34,17 @@ async function getRepos(username: string, keyword: string) {
     page++;
   }
 
+  console.log("repos length--------", repos.length);
   const filteredRepos = repos.filter(
     (repo) => repo.description && repo.description.includes(keyword)
   );
   const formatedRepos = filteredRepos.map(formatRepo);
+  console.log(formatedRepos);
   return formatedRepos;
 }
 
 const useGithub = () => {
-  async function getCurrentRepos() {
+  const getCurrentRepos = async () => {
     try {
       if (!cohortId) return;
       const repos = await getRepos("olaracode", cohortId);
@@ -50,7 +52,7 @@ const useGithub = () => {
     } catch (error) {
       console.log(error);
     }
-  }
+  };
   return {
     getCurrentRepos,
   };

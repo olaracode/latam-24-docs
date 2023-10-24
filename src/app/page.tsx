@@ -4,6 +4,8 @@ import Container from "@/components/Container";
 import Repositories from "@/components/repositories/Repositories";
 import configs from "@/config";
 import OwnedDocs from "@/components/docs/OwnedDocs";
+
+export const revalidate = 3600; // revalidate the data at most every hour
 export default async function Home() {
   const { cohort, flags } = configs;
   return (
