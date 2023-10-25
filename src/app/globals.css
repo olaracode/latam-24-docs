@@ -5,3 +5,10 @@
 .shadow-brutal {
   box-shadow: 8px 8px 0px 0px #000;
 }
+
+.bg-company{
+  background-color: #FF6767;
+}
+.text-company{
+  color: #FF6767;
+}

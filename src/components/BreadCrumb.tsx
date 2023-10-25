@@ -13,7 +13,7 @@ const BreadCrumb = () => {
 
   return (
     <Container>
-      <div className="border-2 border-black p-3 shadow-brutal">
+      <div className="border-2 border-black p-3 shadow-brutal" id="breadcrumb">
         <ul className="flex">
           <li>
             <Link href={`/`}>
