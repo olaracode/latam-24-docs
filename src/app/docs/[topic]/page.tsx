@@ -31,6 +31,9 @@ const DocTopic = ({
   const { topic } = params;
   const { docsByTopic } = useDocs();
   const current = docsByTopic[topic];
+  if (!current) {
+    throw new Error("No se ha encontrado el tema solicitado");
+  }
   return (
     <Container>
       <div className="my-10 grid gap-3 border-2 border-black shadow-brutal p-3">

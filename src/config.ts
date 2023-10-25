@@ -12,8 +12,8 @@ const github = {
 }
 
 const meta = {
-    projectRepository: process.env.NEXT_PUBLIC_PROJECT_REPOSITORY || '',
-    contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL || false,
+    projectRepository: process.env.NEXT_PUBLIC_GITHUB_REPO || '',
+    contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL || '',
 }
 
 const configs = {

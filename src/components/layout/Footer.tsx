@@ -1,9 +1,10 @@
 import React from "react";
 import Container from "../Container";
 import { FaGithub } from "react-icons/fa6";
-
+import configs from "@/config";
 import Link from "next/link";
 const Footer = () => {
+  const { meta } = configs;
   return (
     <footer className="bg-gray-800 text-white">
       <Container>
@@ -21,7 +22,7 @@ const Footer = () => {
           <div className="text-center">
             <p>Documentación creada usando next.js + Tailwindcss</p>
             <Link
-              href="https://github.com/olaracode/latam-24-docs"
+              href={meta.projectRepository}
               className="flex gap-1 items-center justify-center"
             >
               Colabora en github <FaGithub />

@@ -20,6 +20,9 @@ const DocDescription = ({
   const { slug } = params;
   const { docs } = useDocs();
   const current = docs.find((doc) => doc.file.replace(".md", "") === slug);
+  if (!current) {
+    throw new Error("No se ha encontrado el documento solicitado");
+  }
   return (
     <Container>
       <div className="my-10">

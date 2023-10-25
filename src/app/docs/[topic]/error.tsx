@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
+import NotFound from "@/components/error/NotFound";
 import Container from "@/components/Container";
-import BaseError from "@/components/error/BaseError";
 const error = ({
   error,
   reset,
@@ -9,12 +9,10 @@ const error = ({
   error: Error & { digest?: string };
   reset: () => void;
 }) => {
-  console.log("hi", error.cause);
-  console.log(process.env.NODE_ENV);
   return (
-    <div className="mt-40 h-full flex items-center justify-center">
+    <div className="mt-5">
       <Container>
-        <BaseError reset={reset} />
+        <NotFound msg={error.message} to="/docs" />
       </Container>
     </div>
   );
