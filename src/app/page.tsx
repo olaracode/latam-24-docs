@@ -1,13 +1,11 @@
-import SearchBar from "@/components/searchbar/SearchBar";
-import OficialDocs from "@/components/docs/OficialDocs";
-import Container from "@/components/Container";
-import Repositories from "@/components/repositories/Repositories";
 import configs from "@/config";
-import OwnedDocs from "@/components/docs/OwnedDocs";
+import Container from "@/components/Container";
+import { OwnedDocs, Repositories, OfficialDocs } from "@/components/landing";
 
 export const revalidate = 3600; // revalidate the data at most every hour
+
 export default async function Home() {
-  const { cohort, flags } = configs;
+  const { cohort } = configs;
   return (
     <main className="my-24">
       <Container>
@@ -19,12 +17,12 @@ export default async function Home() {
         <section className="my-10">
           <Repositories />
         </section>
-        <section className="my-10">{flags.blog && <SearchBar />}</section>
+
         <section className="my-10">
           <OwnedDocs />
         </section>
         <section className="my-10">
-          <OficialDocs />
+          <OfficialDocs />
         </section>
       </Container>
     </main>

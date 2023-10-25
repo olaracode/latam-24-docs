@@ -10,7 +10,6 @@ const Repositories = async () => {
     return response;
   });
   const repos = await cacheResponse();
-  console.log(repos);
   return (
     <div className="border-2 border-black p-3 shadow-brutal">
       <div className="flex justify-between items-center">

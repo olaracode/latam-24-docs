@@ -1,5 +1,5 @@
 import { Octokit } from "octokit";
-
+import configs from "@/config";
 const octokit = new Octokit({
   auth: process.env.NEXT_PUBLIC_GITHUB_TOKEN,
 });
@@ -18,6 +18,11 @@ function formatRepo(repository: {
 }
 
 async function getRepos(username: string, keyword: string) {
+  if (username === "") {
+    throw new Error("Error al buscar los repositorios", {
+      cause: "Check the .env file and add the NEXT_PUBLIC_GITHUB_USER variable",
+    });
+  }
   let repos: any[] = [];
   let page = 1;
 
@@ -34,23 +39,21 @@ async function getRepos(username: string, keyword: string) {
     page++;
   }
 
-  console.log("repos length--------", repos.length);
   const filteredRepos = repos.filter(
     (repo) => repo.description && repo.description.includes(keyword)
   );
   const formatedRepos = filteredRepos.map(formatRepo);
-  console.log(formatedRepos);
   return formatedRepos;
 }
 
 const useGithub = () => {
+  const { cohort, github } = configs;
   const getCurrentRepos = async () => {
     try {
-      if (!cohortId) return;
-      const repos = await getRepos("olaracode", cohortId);
+      const repos = await getRepos(github.user, cohort.name);
       return repos;
-    } catch (error) {
-      console.log(error);
+    } catch (error: any) {
+      throw new Error(error.message, { cause: "something" });
     }
   };
   return {

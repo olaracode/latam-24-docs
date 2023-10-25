@@ -1,6 +1,7 @@
 const flags = {
     blog: process.env.NEXT_PUBLIC_BLOG === 'true',
 }
+
 const cohort = {
     name: process.env.NEXT_PUBLIC_COHORT_NAME || 'Cohorte',
 }
@@ -10,11 +11,16 @@ const github = {
     token: process.env.NEXT_PUBLIC_GITHUB_TOKEN || '',
 }
 
+const meta = {
+    projectRepository: process.env.NEXT_PUBLIC_PROJECT_REPOSITORY || '',
+    contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL || false,
+}
 
 const configs = {
     flags,
     cohort,
     github,
+    meta,
 }
 
 export default configs
