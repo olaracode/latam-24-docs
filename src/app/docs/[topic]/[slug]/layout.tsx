@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Container from "@/components/Container";
+import { Container } from "@/components/mics";
 import { FaArrowUp } from "react-icons/fa";
 const layout = ({ children }: { children: React.ReactNode }) => {
   return (

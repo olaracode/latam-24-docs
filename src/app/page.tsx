@@ -1,6 +1,6 @@
 import configs from "@/config";
-import Container from "@/components/Container";
 import { OwnedDocs, Repositories, OfficialDocs } from "@/components/landing";
+import { Container } from "@/components/mics";
 
 export const revalidate = 3600; // revalidate the data at most every hour
 

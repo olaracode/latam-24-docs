@@ -1,8 +1,9 @@
 import React from "react";
-import Container from "../Container";
+import { Container } from "../mics";
 import { FaGithub } from "react-icons/fa6";
 import configs from "@/config";
 import Link from "next/link";
+
 const Footer = () => {
   const { meta } = configs;
   return (

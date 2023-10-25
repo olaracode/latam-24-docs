@@ -1,11 +1,12 @@
 import React from "react";
-import Container from "@/components/Container";
+import { Container } from "@/components/mics";
 import useDocs from "@/hooks/useDocs";
 import Link from "next/link";
-
 import { Metadata } from "next";
 import configs from "@/config";
+
 const { cohort } = configs;
+
 export const metadata: Metadata = {
   title: `Documentacion ${cohort.name}`,
   description: "Indice de la documentación",

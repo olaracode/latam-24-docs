@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import NotFound from "@/components/error/NotFound";
-import Container from "@/components/Container";
+import { Container } from "@/components/mics";
 const error = ({
   error,
   reset,

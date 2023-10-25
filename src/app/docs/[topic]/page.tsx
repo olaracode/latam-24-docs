@@ -1,10 +1,11 @@
 import React from "react";
 import useDocs from "@/hooks/useDocs";
-import Container from "@/components/Container";
+import { Container } from "@/components/mics";
 import Link from "next/link";
 import { Metadata } from "next";
 import configs from "@/config";
 const { cohort } = configs;
+
 export const metadata: Metadata = {
   title: `Docs/Tema`,
   description: "Indice de documentos relevantes al tema",

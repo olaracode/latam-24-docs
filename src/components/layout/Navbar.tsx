@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "../Container";
+import { Container } from "../mics";
 import Link from "next/link";
 import Image from "next/image";
 const Navbar = () => {

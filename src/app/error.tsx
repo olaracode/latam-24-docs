@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import Container from "@/components/Container";
 import BaseError from "@/components/error/BaseError";
+import { Container } from "@/components/mics";
 const error = ({
   error,
   reset,
