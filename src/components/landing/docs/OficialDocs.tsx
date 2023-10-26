@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 // create a list with official documentations from html, css, js, react, python, flask, postgresql, bootstrap
-import TopicList from "../../topics/TopicList";
 const officialDocs = [
   {
     name: "HTML (MDN)",
