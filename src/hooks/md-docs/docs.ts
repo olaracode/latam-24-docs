@@ -103,6 +103,23 @@ const vsCodeDocs: DocsT[] = [
     topic: "vs-code",
     content: "",
     tags: ["misc"],
+  },
+  {
+    name: "Extensiones Visual Studio",
+    file: "vs-code-extensions.md",
+    topic: "vs-code",
+    content: "",
+    tags: ["misc"],
+  }
+]
+
+const terminal: DocsT[] = [
+  {
+    name: "Comandos de terminal",
+    file: "terminal.md",
+    topic: "terminal",
+    content: "",
+    tags: ["misc"],
   }
 ]
 
@@ -110,6 +127,7 @@ const docs: DocsT[] = [
     ...htmlDocs,
     ...cssDocs,
     ...vsCodeDocs,
+    ...terminal,
     ...jsDocs,
     ...reactDocs,
 ]

@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import useGithub from "@/hooks/useGithub";
+import useGithub from "@/hooks/github/useGithub";
 import { cache } from "react";
 
 const Repositories = async () => {

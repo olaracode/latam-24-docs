@@ -12,7 +12,7 @@ function getContent(filePath: string) {
 }
 function getDocs() {
   const docs = docsFiles.map((file) => {
-    const filePath = generateRoute(file.file);
+    const filePath = generateRoute(`${file.topic}/${file.file}`);
     const content = getContent(filePath);
     return {
       ...file,

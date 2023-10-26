@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "@/components/mics";
-import useDocs from "@/hooks/useDocs";
+import useDocs from "@/hooks/md-docs/useDocs";
 import MarkDown from "@/components/mics/MarkDown";
 import { Metadata } from "next";
 import configs from "@/config";

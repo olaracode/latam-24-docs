@@ -1,5 +1,5 @@
 import React from "react";
-import useDocs from "@/hooks/useDocs";
+import useDocs from "@/hooks/md-docs/useDocs";
 import { Container } from "@/components/mics";
 import Link from "next/link";
 import { Metadata } from "next";

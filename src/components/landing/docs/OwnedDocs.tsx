@@ -1,5 +1,5 @@
 import React from "react";
-import useDocs from "@/hooks/useDocs";
+import useDocs from "@/hooks/md-docs/useDocs";
 import Link from "next/link";
 const OwnedDocs = () => {
   const { docs } = useDocs();
