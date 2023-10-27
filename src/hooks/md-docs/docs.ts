@@ -120,6 +120,13 @@ const terminal: DocsT[] = [
     topic: "terminal",
     content: "",
     tags: ["misc"],
+  },
+  {
+    name: "Comandos de git",
+    file: "git.md",
+    topic: "terminal",
+    content: "",
+    tags: ["misc"],
   }
 ]
 
