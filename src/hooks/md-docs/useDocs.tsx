@@ -22,6 +22,18 @@ function getDocs() {
   return docs;
 }
 
+function getRelated(docs: DocsT[], currentDoc: DocsT) {
+  // get all docs with the same topic but not the same file
+  // get all docs with matching tags
+  const related = docs.filter(
+    (doc) =>
+      doc.topic === currentDoc.topic &&
+      doc.file !== currentDoc.file &&
+      doc.tags.some((tag) => currentDoc.tags.includes(tag))
+  );
+  return related;
+}
+
 interface DocsByTopics {
   [key: string]: DocsT[];
 }
@@ -37,7 +49,7 @@ const useDocs = () => {
   }, {});
   const topics = Object.keys(docsByTopic);
 
-  return { docs, getContent, docsByTopic, topics };
+  return { docs, getContent, docsByTopic, topics, getRelated };
 };
 
 export default useDocs;

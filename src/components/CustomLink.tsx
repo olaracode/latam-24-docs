@@ -16,7 +16,7 @@ const CustomLink = ({
   size?: tailwindSize;
 }) => {
   return (
-    <Link href={to} className={baseClass(size)}>
+    <Link href={to} className={baseClass(size)} scroll={true}>
       {content}
     </Link>
   );
