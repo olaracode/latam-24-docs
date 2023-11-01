@@ -1,9 +1,9 @@
 export type DocsT = {
-  name: string;
-  file: string;
-  topic: string;
-  tags: string[];
-  content: string;
+  name: string; // Nombre que se ve en el menu
+  file: string; // Nombre del archivo .md
+  topic: string; // Nombre de la carpeta donde se encuentra el archivo
+  tags: string[]; // Tags para filtrar
+  content: string; // Contenido del archivo .md - Inicia vacío y se carga con el hook useDocs
 };
 
 const htmlDocs: DocsT[] = [
@@ -14,7 +14,6 @@ const htmlDocs: DocsT[] = [
     content: "",
     tags: ["html"],
   },
-  
 ];
 
 const cssDocs: DocsT[] = [
@@ -32,7 +31,7 @@ const cssDocs: DocsT[] = [
     content: "",
     tags: ["css"],
   },
-]
+];
 
 const jsDocs: DocsT[] = [
   {
@@ -54,9 +53,16 @@ const jsDocs: DocsT[] = [
     file: "fetch-js.md",
     topic: "js",
     content: "",
-    tags: ["js"]
-  }
-]
+    tags: ["js"],
+  },
+  {
+    name: "Intro a javascript",
+    file: "intro.md",
+    topic: "js",
+    content: "",
+    tags: ["js"],
+  },
+];
 
 const reactDocs: DocsT[] = [
   {
@@ -93,8 +99,8 @@ const reactDocs: DocsT[] = [
     topic: "react",
     content: "",
     tags: ["react", "js", "html"],
-  }
-]
+  },
+];
 
 const vsCodeDocs: DocsT[] = [
   {
@@ -110,8 +116,8 @@ const vsCodeDocs: DocsT[] = [
     topic: "vs-code",
     content: "",
     tags: ["misc"],
-  }
-]
+  },
+];
 
 const terminal: DocsT[] = [
   {
@@ -127,16 +133,16 @@ const terminal: DocsT[] = [
     topic: "terminal",
     content: "",
     tags: ["misc"],
-  }
-]
+  },
+];
 
 const docs: DocsT[] = [
-    ...htmlDocs,
-    ...cssDocs,
-    ...vsCodeDocs,
-    ...terminal,
-    ...jsDocs,
-    ...reactDocs,
-]
+  ...htmlDocs,
+  ...cssDocs,
+  ...vsCodeDocs,
+  ...terminal,
+  ...jsDocs,
+  ...reactDocs,
+];
 
 export default docs;
