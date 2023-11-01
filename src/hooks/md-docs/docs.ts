@@ -35,6 +35,13 @@ const cssDocs: DocsT[] = [
 
 const jsDocs: DocsT[] = [
   {
+    name: "Intro a javascript",
+    file: "intro.md",
+    topic: "js",
+    content: "",
+    tags: ["js"],
+  },
+  {
     name: "Metodos de array(js)",
     file: "array-methods-js.md",
     topic: "js",
@@ -51,13 +58,6 @@ const jsDocs: DocsT[] = [
   {
     name: "Fetch Javascript",
     file: "fetch-js.md",
-    topic: "js",
-    content: "",
-    tags: ["js"],
-  },
-  {
-    name: "Intro a javascript",
-    file: "intro.md",
     topic: "js",
     content: "",
     tags: ["js"],
