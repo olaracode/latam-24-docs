@@ -1,7 +1,7 @@
 import React from "react";
 import useEvaluation from "@/hooks/evaluation/useEvaluation";
 import Question from "@/components/evaluation/Question";
-const page = ({
+const Page = ({
   params,
 }: {
   params: {
@@ -20,4 +20,4 @@ const page = ({
   );
 };
 
-export default page;
+export default Page;

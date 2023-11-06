@@ -10,7 +10,7 @@ const EvaluationNotFound = () =>
     to: "/evaluation",
   });
 
-const layout = ({
+const Layout = ({
   params,
   children,
 }: {
@@ -37,4 +37,4 @@ const layout = ({
   );
 };
 
-export default layout;
+export default Layout;

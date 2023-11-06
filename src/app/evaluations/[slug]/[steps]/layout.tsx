@@ -1,7 +1,7 @@
 import React from "react";
 import EvaluationNavigation from "@/components/evaluation/EvaluationNavigation";
 import useEvaluation from "@/hooks/evaluation/useEvaluation";
-const layout = ({
+const Layout = ({
   params,
   children,
 }: {
@@ -25,4 +25,4 @@ const layout = ({
   );
 };
 
-export default layout;
+export default Layout;

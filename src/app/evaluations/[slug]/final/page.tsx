@@ -1,6 +1,6 @@
 import React from "react";
 import EvaluationResults from "@/components/evaluation/EvaluationResults";
-const page = ({
+const Page = ({
   params,
 }: {
   params: {
@@ -10,4 +10,4 @@ const page = ({
   return <EvaluationResults />;
 };
 
-export default page;
+export default Page;
