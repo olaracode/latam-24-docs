@@ -1,0 +1,309 @@
+{
+  "title": "Evaluación basica de JS",
+  "topic": "Javascript",
+  "description": "Esta es una evaluación básica de JavaScript que consta de 29 preguntas. Las preguntas cubren una amplia gama de temas, incluyendo la declaración de variables, tipos de datos, operadores, arreglos, objetos y funciones en JavaScript. Cada pregunta proporciona múltiples opciones de respuesta, y solo una de ellas es correcta.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "¿Que es Javascript?",
+      "options": [
+        "Un lenguaje de marcado",
+        "Un lenguaje de estilos",
+        "Un lenguaje de programación"
+      ],
+      "answer": "Un lenguaje de programación",
+      "explanation": "Javascript es un lenguaje de programación que se utiliza principalmente para crear páginas web dinámicas."
+    },
+    {
+      "id": 2,
+      "question": "¿Cómo se declara una variable en JavaScript?",
+      "options": [
+        "var nombreVariable",
+        "variable nombreVariable",
+        "v nombreVariable",
+        "declare nombreVariable"
+      ],
+      "answer": "var nombreVariable",
+      "explanation": "La palabra reservada var se utiliza para declarar una variable en JavaScript."
+    },
+    {
+      "id": 3,
+      "question": "¿Cual es el modo preferido de declarar una variable en javascript?",
+      "options": ["var", "let", "const", "declare"],
+      "answer": "let",
+      "explanation": "let es la forma preferida de declarar una variable en javascript. La palabra reservada const se utiliza para declarar una constante. Var se considera actualmente deprecado | obsoleto."
+    },
+    {
+      "id": 4,
+      "question": "¿Como se declara una constante?",
+      "options": [
+        "const nombreConstante",
+        "constant nombreConstante",
+        "c nombreConstante",
+        "declare nombreConstante"
+      ],
+      "answer": "const nombreConstante",
+      "explanation": "La palabra reservada const se utiliza para declarar una constante en JavaScript."
+    },
+    {
+      "id": 5,
+      "question": "¿Cual es la forma correcta de nombrar una variable?",
+      "options": [
+        "nombreVariable",
+        "nombre_variable",
+        "nombre-variable",
+        "nombrevariable"
+      ],
+      "answer": "nombreVariable",
+      "explanation": "La forma correcta de nombrar una variable en JavaScript es usando camelCase."
+    },
+    {
+      "id": 6,
+      "question": "¿Cuales son los tipos de datos primitivos en javascript?",
+      "options": [
+        "number, string, boolean, null, undefined",
+        "number, string, boolean, null, undefined, object",
+        "number, string, boolean, null, undefined, object, array",
+        "number, string, boolean, null, undefined, object, array, function"
+      ],
+      "answer": "number, string, boolean, null, undefined",
+      "explanation": "Los tipos de datos primitivos en JavaScript son: number, string, boolean, null, undefined."
+    },
+    {
+      "id": 7,
+      "question": "¿Cuando quieres asignar un valor a una variable, que operador debes usar?",
+      "options": ["=", "==", "===", "=>"],
+      "answer": "=",
+      "explanation": "El operador = se utiliza para asignar un valor a una variable."
+    },
+    {
+      "id": 8,
+      "question": "¿Cual es el operador de comparación estricta(valor y tipo de dato)?",
+      "options": ["=", "==", "===", "=>"],
+      "answer": "===",
+      "explanation": "El operador === se utiliza para comparar si dos valores son iguales y del mismo tipo de dato."
+    },
+    {
+      "id": 9,
+      "question": "¿Cual es el operador de comparación no estricta(valor)?",
+      "options": ["=", "==", "===", "=>"],
+      "answer": "==",
+      "explanation": "El operador == se utiliza para comparar si dos valores son iguales."
+    },
+    {
+      "id": 10,
+      "question": "¿Cual es el operador de comparación mayor o igual?",
+      "options": ["=", "==", "===", "=>"],
+      "answer": ">=",
+      "explanation": "El operador >= se utiliza para comparar si un valor es mayor o igual que otro."
+    },
+    {
+      "id": 11,
+      "question": "¿Cual es el operador de comparación menor o igual?",
+      "options": ["=", "==", "===", "<="],
+      "answer": "<=",
+      "explanation": "El operador <= se utiliza para comparar si un valor es menor o igual que otro."
+    },
+    {
+      "id": 12,
+      "question": "¿Cual es el operador logico para comparar si x condición Y z condición se cumplen?",
+      "options": ["&&", "||", "!", "!="],
+      "answer": "&&",
+      "explanation": "El operador && se utiliza para comparar si dos condiciones se cumplen."
+    },
+    {
+      "id": 13,
+      "question": "¿Cual es el operador logico para comparar si x condición O z condición se cumplen?",
+      "options": ["&&", "||", "!", "!="],
+      "answer": "||",
+      "explanation": "El operador || se utiliza para comparar si al menos una de dos condiciones se cumplen."
+    },
+    {
+      "id": 14,
+      "question": "¿Cual es el operador logico para negar una condición?",
+      "options": ["&&", "||", "!", "!="],
+      "answer": "!",
+      "explanation": "El operador ! se utiliza para negar una condición."
+    },
+    {
+      "id": 15,
+      "question": "¿Que es un arreglo/array?",
+      "options": [
+        "Una cadena de caracteres",
+        "Una lista de datos",
+        "Un grupo de llave y valor",
+        "Un valor binario(Verdadero o Falso)"
+      ],
+      "answer": "Una lista de datos",
+      "explanation": "Un arreglo es una lista de datos."
+    },
+    {
+      "id": 16,
+      "question": "¿Como se declara un arreglo?",
+      "options": [
+        "var nombreArreglo = []",
+        "var nombreArreglo = {}",
+        "var nombreArreglo = ()",
+        "var nombreArreglo = ''"
+      ],
+      "answer": "var nombreArreglo = []",
+      "explanation": "Un arreglo se declara usando corchetes."
+    },
+    {
+      "id": 17,
+      "question": "¿Que es el indice en un array?",
+      "options": [
+        "El valor de un elemento",
+        "La posición de un elemento",
+        "El nombre de un elemento",
+        "El tipo de dato de un elemento"
+      ],
+      "answer": "La posición de un elemento",
+      "explanation": "El indice de un elemento es la posición que ocupa en el arreglo, empezando desde 0."
+    },
+    {
+      "id": 18,
+      "question": "¿Como se accede a un elemento de un arreglo?",
+      "options": [
+        "nombreArreglo[0]",
+        "nombreArreglo{0}",
+        "nombreArreglo(0)",
+        "nombreArreglo.0"
+      ],
+      "answer": "nombreArreglo[0]",
+      "explanation": "Para acceder a un elemento de un arreglo se usa el nombre del arreglo seguido de corchetes y el indice del elemento que se quiere acceder."
+    },
+    {
+      "id": 19,
+      "question": "¿Como se agrega un elemento al final de un arreglo?",
+      "options": [
+        "nombreArreglo.push(elemento)",
+        "nombreArreglo.pop(elemento)",
+        "nombreArreglo.shift(elemento)",
+        "nombreArreglo.unshift(elemento)"
+      ],
+      "answer": "nombreArreglo.push(elemento)",
+      "explanation": "Para agregar un elemento al final de un arreglo se usa el método push"
+    },
+    {
+      "id": 20,
+      "question": "¿Como se imprime un valor en la consola?",
+      "options": [
+        "console.log(valor)",
+        "console(valor)",
+        "console.print(valor)",
+        "console.write(valor)"
+      ],
+      "answer": "console.log(valor)",
+      "explanation": "Para imprimir un valor en la consola se usa el método log del objeto console."
+    },
+    {
+      "id": 21,
+      "question": "¿Qué es un objeto en JavaScript?",
+      "options": [
+        "Un tipo de variable",
+        "Una colección de pares clave-valor",
+        "Un tipo de función",
+        "Un operador"
+      ],
+      "answer": "Una colección de pares clave-valor",
+      "explanation": "Un objeto en JavaScript es una colección de pares clave-valor. Las claves son cadenas de texto y los valores pueden ser cualquier tipo de dato en JavaScript."
+    },
+    {
+      "id": 22,
+      "question": "¿Cómo se declara un objeto en JavaScript?",
+      "options": [
+        "var objeto = ();",
+        "var objeto = [];",
+        "var objeto = {};",
+        "var objeto = <>;"
+      ],
+      "answer": "var objeto = {};",
+      "explanation": "Un objeto en JavaScript se declara utilizando llaves {}. Por ejemplo: var objeto = {};"
+    },
+    {
+      "id": 23,
+      "question": "¿Cómo se accede a un valor en un objeto en JavaScript?",
+      "options": [
+        "objeto.valor",
+        "objeto[valor]",
+        "objeto->valor",
+        "objeto(valor)"
+      ],
+      "answer": "objeto.valor",
+      "explanation": "Se puede acceder a un valor en un objeto en JavaScript utilizando la notación de punto. Por ejemplo: objeto.valor;"
+    },
+    {
+      "id": 24,
+      "question": "¿Qué es la notación objeto[llave] en JavaScript?",
+      "options": [
+        "Una forma de declarar un objeto",
+        "Una forma de acceder a un valor en un objeto",
+        "Una forma de declarar una función",
+        "Una forma de crear un array"
+      ],
+      "answer": "Una forma de acceder a un valor en un objeto",
+      "explanation": "La notación objeto[llave] en JavaScript es una forma de acceder a un valor en un objeto utilizando una llave. Por ejemplo: objeto['llave'];"
+    },
+    {
+      "id": 25,
+      "question": "¿Qué es una función en JavaScript?",
+      "options": [
+        "Un tipo de variable",
+        "Un bloque de código diseñado para realizar una tarea específica",
+        "Un operador",
+        "Un objeto"
+      ],
+      "answer": "Un bloque de código diseñado para realizar una tarea específica",
+      "explanation": "Una función en JavaScript es un bloque de código diseñado para realizar una tarea específica. Una función se ejecuta cuando se invoca (llama)."
+    },
+    {
+      "id": 26,
+      "question": "¿Cómo se declara una función en JavaScript?",
+      "options": [
+        "function nombreFuncion() {}",
+        "func nombreFuncion() {}",
+        "function: nombreFuncion() {}",
+        "nombreFuncion function() {}"
+      ],
+      "answer": "function nombreFuncion() {}",
+      "explanation": "Una función en JavaScript se declara con la palabra clave 'function', seguida del nombre de la función, un par de paréntesis que pueden incluir nombres de parámetros y un par de llaves que incluyen el cuerpo de la función."
+    },
+    {
+      "id": 27,
+      "question": "¿Cómo se ejecuta o llama a una función en JavaScript?",
+      "options": [
+        "nombreFuncion.execute()",
+        "execute.nombreFuncion()",
+        "nombreFuncion()",
+        "execute(nombreFuncion)"
+      ],
+      "answer": "nombreFuncion()",
+      "explanation": "Una función en JavaScript se ejecuta o llama utilizando el nombre de la función seguido de un par de paréntesis. Por ejemplo: nombreFuncion();"
+    },
+    {
+      "id": 28,
+      "question": "¿Qué es un parámetro en JavaScript?",
+      "options": [
+        "Un valor que se pasa a una función",
+        "Una función dentro de otra función",
+        "Un tipo de variable",
+        "Un tipo de operador"
+      ],
+      "answer": "Un valor que se pasa a una función",
+      "explanation": "Un parámetro en JavaScript es un valor que se pasa a una función. Los parámetros se definen en la declaración de la función y se utilizan como variables dentro de la función."
+    },
+    {
+      "id": 29,
+      "question": "¿Cómo se declara un parámetro en una función de JavaScript?",
+      "options": [
+        "function nombreFuncion(parametro) {}",
+        "function nombreFuncion: parametro {}",
+        "nombreFuncion function(parametro) {}",
+        "function parametro.nombreFuncion() {}"
+      ],
+      "answer": "function nombreFuncion(parametro) {}",
+      "explanation": "Un parámetro en una función de JavaScript se declara dentro de los paréntesis en la declaración de la función. Por ejemplo: function nombreFuncion(parametro) {};"
+    }
+  ]
+}

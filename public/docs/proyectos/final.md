@@ -1,7 +1,6 @@
 # Grupo 1
-
-Daniela Parra
-Fabiola Velasquez
+Daniela Parra | PENDIENTE
+Fabiola Velasquez | PENDIENTE
 Jessica Valbuena
 Jose Muñoz
 Maruan Yarbouh # Lider
@@ -14,13 +13,15 @@ Byron Canga # Lider
 Juan Carlos
 Kevin Pacheco
 Lina Maria Cardona
-Anderson
+Anderson | PENDIENTE
 
 # Grupo 3
 
-Hector G. Prieto
+Hector G. Prieto # Hector
 Jorge Casado
 Miguel García
 Moises Correa
 Rogelio Granadino
 Sonias Rodriguez
+
+
