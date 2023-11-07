@@ -12,7 +12,7 @@ const EvaluationNavigation = ({
   current: number;
 }) => {
   const { handleEvaluationStart, setAnswer, findLastAnswered } =
-    useUserEvaluation();
+    useUserEvaluation(evaluation.slug);
   const setUserEvaluation = useEvaluationStore(
     (state) => state.setUserEvaluation
   );
@@ -24,9 +24,7 @@ const EvaluationNavigation = ({
   const questions = evaluation.questions;
   const totalQuestions = questions.length;
   const currentQuestion = current;
-  const handleEvaluation = () => {
-    //
-  };
+
   const navigateQuestion = (question?: number) => {
     if (!selectedOption) return;
     setAnswer(currentQuestion, selectedOption);
@@ -39,15 +37,7 @@ const EvaluationNavigation = ({
   return (
     <>
       <div className="grid grid-cols-3 justify-between">
-        <div className="flex justify-center">
-          <button
-            className="btn btn-base"
-            disabled={currentQuestion === 1}
-            onClick={() => navigateQuestion(currentQuestion - 1)}
-          >
-            Anterior
-          </button>
-        </div>
+        <div></div>
         <div>
           <div className="flex justify-center gap-1">
             <span className="bold">{currentQuestion}</span>

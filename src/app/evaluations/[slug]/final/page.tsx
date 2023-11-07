@@ -7,7 +7,7 @@ const Page = ({
     slug: string;
   };
 }) => {
-  return <EvaluationResults />;
+  return <EvaluationResults slug={params.slug} />;
 };
 
 export default Page;

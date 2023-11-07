@@ -93,7 +93,7 @@
     {
       "id": 10,
       "question": "¿Cual es el operador de comparación mayor o igual?",
-      "options": ["=", "==", "===", "=>"],
+      "options": ["=", "==", "===", ">="],
       "answer": ">=",
       "explanation": "El operador >= se utiliza para comparar si un valor es mayor o igual que otro."
     },
@@ -141,12 +141,12 @@
       "id": 16,
       "question": "¿Como se declara un arreglo?",
       "options": [
-        "var nombreArreglo = []",
-        "var nombreArreglo = {}",
-        "var nombreArreglo = ()",
-        "var nombreArreglo = ''"
+        "let nombreArreglo = []",
+        "let nombreArreglo = {}",
+        "let nombreArreglo = ()",
+        "let nombreArreglo = ''"
       ],
-      "answer": "var nombreArreglo = []",
+      "answer": "let nombreArreglo = []",
       "explanation": "Un arreglo se declara usando corchetes."
     },
     {
@@ -202,23 +202,23 @@
       "question": "¿Qué es un objeto en JavaScript?",
       "options": [
         "Un tipo de variable",
-        "Una colección de pares clave-valor",
+        "Una colección de pares llave-valor",
         "Un tipo de función",
         "Un operador"
       ],
-      "answer": "Una colección de pares clave-valor",
+      "answer": "Una colección de pares llave-valor",
       "explanation": "Un objeto en JavaScript es una colección de pares clave-valor. Las claves son cadenas de texto y los valores pueden ser cualquier tipo de dato en JavaScript."
     },
     {
       "id": 22,
       "question": "¿Cómo se declara un objeto en JavaScript?",
       "options": [
-        "var objeto = ();",
-        "var objeto = [];",
-        "var objeto = {};",
-        "var objeto = <>;"
+        "let objeto = ();",
+        "let objeto = [];",
+        "let objeto = {};",
+        "let objeto = <>;"
       ],
-      "answer": "var objeto = {};",
+      "answer": "let objeto = {};",
       "explanation": "Un objeto en JavaScript se declara utilizando llaves {}. Por ejemplo: var objeto = {};"
     },
     {

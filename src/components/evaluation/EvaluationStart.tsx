@@ -12,7 +12,7 @@ const EvaluationStart = ({
   slug: string;
   evaluation: EvaluationI;
 }) => {
-  const { handleEvaluationStart } = useUserEvaluation();
+  const { handleEvaluationStart } = useUserEvaluation(slug);
   const [fullName, setName] = React.useState("");
   const setUserEvaluation = useEvaluationStore(
     (state) => state.setUserEvaluation

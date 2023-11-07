@@ -3,8 +3,8 @@ import React from "react";
 import useUserEvaluation from "@/hooks/evaluation/useUserEvaluation";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import { ImCancelCircle } from "react-icons/im";
-const EvaluationResults = () => {
-  const { userEvaluation, getUserPoints } = useUserEvaluation();
+const EvaluationResults = ({ slug }: { slug: string }) => {
+  const { userEvaluation, getUserPoints } = useUserEvaluation(slug);
   const points = getUserPoints();
   const approved =
     points && userEvaluation && points / userEvaluation?.questions.length > 0.6;

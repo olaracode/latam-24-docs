@@ -4,14 +4,14 @@ import { useEvaluationStore } from "./useEvaluationStore";
 import { EvaluationI } from "./utils";
 import { useRouter } from "next/navigation";
 
-const useUserEvaluation = () => {
+const useUserEvaluation = (slug: string) => {
   const router = useRouter();
   const { userEvaluation, setUserEvaluation, clearSelectedOption } =
     useEvaluationStore();
 
   const handleEvaluationStart = (evaluation: EvaluationI) => {
     setUserEvaluation(evaluation);
-    localStorage.setItem("userEvaluation", JSON.stringify(evaluation));
+    localStorage.setItem(evaluation.slug, JSON.stringify(evaluation));
   };
 
   const setAnswer = (question: number, answer: string) => {
@@ -22,7 +22,7 @@ const useUserEvaluation = () => {
       answer === newEvaluation.questions[question - 1].answer;
     setUserEvaluation(newEvaluation);
     clearSelectedOption();
-    localStorage.setItem("userEvaluation", JSON.stringify(newEvaluation));
+    localStorage.setItem(newEvaluation.slug, JSON.stringify(newEvaluation));
   };
 
   const findLastAnswered = (evaluation: EvaluationI) => {
@@ -45,7 +45,7 @@ const useUserEvaluation = () => {
   };
 
   React.useEffect(() => {
-    let userEvaluation = localStorage.getItem("userEvaluation");
+    let userEvaluation = localStorage.getItem(slug);
     if (!userEvaluation) return;
     console.log(JSON.parse(userEvaluation));
     const parsed: EvaluationI = JSON.parse(userEvaluation);
