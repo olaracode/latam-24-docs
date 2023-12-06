@@ -136,6 +136,16 @@ const terminal: DocsT[] = [
   },
 ];
 
+const misc: DocsT[] = [
+  {
+    name: "Convenciones de nombrado",
+    file: "naming-conventions.md",
+    topic: "misc",
+    content: "",
+    tags: ["misc"],
+  },
+];
+
 const docs: DocsT[] = [
   ...htmlDocs,
   ...cssDocs,
@@ -143,6 +153,7 @@ const docs: DocsT[] = [
   ...terminal,
   ...jsDocs,
   ...reactDocs,
+  ...misc,
 ];
 
 export default docs;
